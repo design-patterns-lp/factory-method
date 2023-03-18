@@ -8,12 +8,12 @@ public class ServicoEnvioDeLicencaTest {
     @Test
     void deveExecutarEnvioDeLicenca() {
         IServico servico = ServicoFactory.obterServico("EnvioDeLicenca");
-        assertEquals("Envio de licenca autorizada", servico.executar());
+        assertEquals("Envio de licença autorizada", servico.executar());
     }
 
     @Test
     void deveCancelarEnvioDeLicenca() {
         IServico servico = ServicoFactory.obterServico("EnvioDeLicenca");
-        assertEquals("Envio de licenca negada", servico.cancelar());
+        assertEquals("Envio de licença negada", servico.cancelar());
     }
 }

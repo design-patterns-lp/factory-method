@@ -9,12 +9,12 @@ public class ServicoEntradaEmPatioTest {
     @Test
     void deveExecutarEntradaEmPatio() {
         IServico servico = ServicoFactory.obterServico("EntradaEmPatio");
-        assertEquals("Entrada em patio autorizada", servico.executar());
+        assertEquals("Entrada em pátio autorizada", servico.executar());
     }
 
     @Test
     void deveCancelarEntradaEmPatio() {
         IServico servico = ServicoFactory.obterServico("EntradaEmPatio");
-        assertEquals("Entrada em patio negada", servico.cancelar());
+        assertEquals("Entrada em pátio negada", servico.cancelar());
     }
 }
